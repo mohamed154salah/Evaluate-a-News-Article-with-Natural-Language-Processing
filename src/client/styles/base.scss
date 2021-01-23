@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    background: #3b4a6b;
+    color: #f0d43a;
+}
+
+main {
+    flex: 2;
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: 'Oswald', sans-serif;
+}

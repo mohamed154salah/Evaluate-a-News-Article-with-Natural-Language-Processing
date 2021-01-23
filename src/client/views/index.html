@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evaluate a News Article with Natural Language
+      Processing</title>
+      <link rel="stylesheet" href="/styles/resets.css">
+      <link rel="stylesheet" href="/styles/base.css">
+      <link rel="stylesheet" href="/styles/header.css">
+      <link rel="stylesheet" href="/styles/form.css">
+      <link rel="stylesheet" href="/styles/footer.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="head">
+        <h1>
+          udacity project:"Evaluate a News Article with Natural Language
+          Processing"
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <p class="try">
+        Try to type text to see Natural Language Processing with meaning cloud
+        "Sentiment Analysis"
+      </p>
+      <section>
+        <form class=" " onsubmit="return Client.handleSubmit(event)">
+          <input
+            id="name"
+            type="url"
+            name="input"
+            value=""
+            onblur="onBlur()"
+            placeholder="your url"
+          />
+          <input
+            type="submit"
+            name=""
+            value="submit"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return handleSubmit(event)"
+          />
+        </form>
+      </section>
+
+      <section>
+        <h1> Results</h1>
+        <div id="results">
+        <h2>subjectivity:<div id="subjectivity"></div></h2>  
+        <h2>confidence:<div id="confidence"></div></h2>  
+        <h2>irony:<div id="irony"></div></h2>   
+        <h2>agreement: <div id="agreement"></div></h2>  
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p class="footer-cont">© 2020 Mohamed Salah and  meaning cloud, All Copyrights reserved</p>
+    </footer>   
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+     </script>
+  </body>
+</html>
